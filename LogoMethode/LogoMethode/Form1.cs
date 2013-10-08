@@ -16,6 +16,7 @@ namespace Logo_Methode
             InitializeComponent();
         }
 
+        //Hier maken we eerst de methode aan:
         private void TekenLogo(Graphics paper1,
                                 Pen pen1, 
                                 int xPos, 
@@ -32,6 +33,7 @@ namespace Logo_Methode
             paper = pictureBox1.CreateGraphics();
             Pen pen = new Pen(Color.Black);
 
+        //Hier gaan we onze methode aanroepen:
             TekenLogo(paper, pen, 10, 20);
             TekenLogo(paper, pen, 100, 100);
         }
