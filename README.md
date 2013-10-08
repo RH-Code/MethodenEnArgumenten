@@ -1,5 +1,5 @@
-MethodenEnArgumenten
-====================
+# Methoden En Argumenten
+
 
 ## Deze oefeningen behandelen:
 * hoe je methoden en functies schrijft
