@@ -45,9 +45,13 @@ namespace Driehoek_Methode
                                     int breedte,
                                     int hoogte)
         {
-            Tekengebied.DrawLine(penToUse, xPos, yPos, xPos, yPos + hoogte);
-            Tekengebied.DrawLine(penToUse, xPos, yPos, xPos + breedte, yPos + hoogte);
-            Tekengebied.DrawLine(penToUse, xPos, yPos + hoogte, xPos + breedte, yPos + hoogte);
+            int rechterHoekX, rechterHoekY;
+            rechterHoekX = xPos + breedte;
+            rechterHoekY = yPos + hoogte;
+            
+            Tekengebied.DrawLine(penToUse, xPos, yPos, xPos, rechterHoekY);
+            Tekengebied.DrawLine(penToUse, xPos, yPos, rechterHoekX, rechterHoekY);
+            Tekengebied.DrawLine(penToUse, xPos, rechterHoekY, rechterHoekX, rechterHoekY);
         }
     }
 }
