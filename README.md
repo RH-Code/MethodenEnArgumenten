@@ -8,7 +8,7 @@
 * het gebruik van return bij functies
 
 ## Oefeningen:
-* 2 Logo's tekenen
+* 2 Logo's tekenen a.d.h.v. Methode
 * Driehoek tekenen a.d.h.v. Methode
 * Huis tekenen a.d.h.v. Methodes
 * Oppervlakte berekenen m.b.v. Functie Methode
