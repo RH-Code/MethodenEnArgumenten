@@ -23,13 +23,25 @@ namespace SomEnVerschil
             getal1 = Convert.ToInt32(txtGetal1.Text);
             getal2 = Convert.ToInt32(txtGetal2.Text);
 
-            som = Som(getal1, getal2);
-            verschil = Verschil(getal1, getal2);
-
+            SomEnVerschil(getal1, getal2, out som, out verschil);
+            /*
+            * kan ook als volgt gecodeerd worden:
+            som = Som(getal1, getal2)
+            verschil = Verschil(getal1, getal2)
+            */
+            
             lblSom.Text = Convert.ToString(som);
             lblVerschil.Text = Convert.ToString(verschil);
         }
 
+        private void SomEnVerschil(int getal1, int getal2,
+                                    out int som, out int verschil)
+        {
+            som = getal1 + getal2;
+            verschil = getal1 - getal2;
+        }
+
+        /*
         private int Som(int getal1, int getal2)
         {
             return getal1 + getal2;
@@ -39,5 +51,7 @@ namespace SomEnVerschil
         {
             return getal1 - getal2;
         }
+        */
+        
     }
 }
